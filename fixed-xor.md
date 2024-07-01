@@ -24,6 +24,10 @@ If your function works properly, then when you feed it the string:
 
 ***
 
+We have two hexadecimal strings, and we need to perform a bitwise XOR operation on them. After performing the XOR operation, we convert the result back into a hexadecimal string.
+
+So, the code in Python will be like this:
+
 ```python
 def FixedXOR(val1, val2):
     value1_byte = bytes.fromhex(val1)  # Convert the first hex string to bytes
