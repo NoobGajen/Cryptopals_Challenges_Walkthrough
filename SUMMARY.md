@@ -1,4 +1,5 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Convert hex to base64](convert-hex-to-base64.md)
+* [Convert hex to base64](1.1.convert-hex-to-base64.md)
+* [Fixed XOR](fixed-xor.md)
