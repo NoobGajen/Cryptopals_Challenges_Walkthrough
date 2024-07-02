@@ -3,3 +3,4 @@
 * [Introduction](README.md)
 * [Convert hex to base64](1.1.convert-hex-to-base64.md)
 * [Fixed XOR](fixed-xor.md)
+* [Single-byte XOR cipher](single-byte-xor-cipher.md)
