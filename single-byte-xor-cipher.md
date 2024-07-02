@@ -67,7 +67,7 @@ for xored_key in range(256):
 print(f"Key in letter: {chr(best_key)}, Key in digit: {best_key}\nMessage: {best_message}")
 ```
 
-<figure><img src=".gitbook/assets/Single-byte XOR cipher0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Single-byte XOR cipher 0.png" alt=""><figcaption></figcaption></figure>
 
 We can also solve it by matching it with English plain text.\
 First of all, to solve this challenge, we need to convert the given hexadecimal value into byte form so we can perform further actions. After converting it, we will XOR every byte of the hexadecimal bytes with all the possible ASCII characters, which will be in the range of decimal 0 to 255. Then, we can match every character from the XORed result with normal English plain text. Finally, we get our final message by decoding those matched bytes into a normal string.
@@ -92,4 +92,4 @@ for xored_key in range(256):   # All the possible ASCII char
         pass
 ```
 
-<figure><img src=".gitbook/assets/Single-byte XOR cipher1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Single-byte XOR cipher 1.png" alt=""><figcaption></figcaption></figure>
