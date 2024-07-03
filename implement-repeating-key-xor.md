@@ -22,3 +22,23 @@ Encrypt a bunch of stuff using your repeating-key XOR function. Encrypt your mai
 
 ***
 
+```python
+def repeating_key_xor(plaintext, key):
+    cipher_bytes = bytearray()
+    byte_plaintext = plaintext.encode()
+    print(byte_plaintext.find(b"\n"))
+    byte_key = key.encode()
+
+    repeat_count = (len(byte_plaintext) // len(byte_key)) + 1
+    expanded_key = (byte_key * repeat_count)[:len(byte_plaintext)]
+    
+    for i in range(len(byte_plaintext)):
+        cipher_bytes.append(byte_plaintext[i] ^ expanded_key[i])
+    
+    return cipher_bytes.hex()
+
+plaintext = "Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal"
+key = "ICE"
+
+print(repeating_key_xor(plaintext, key))
+```
